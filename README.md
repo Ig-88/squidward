@@ -1,5 +1,5 @@
 # squidward_container
-Container to run squid proxy for rpm, deb, and other packages
+Container to run squid proxy cache for rpm, deb, and other packages.
 
 To deploy
 `docker pull koffin/squidward` and then  
