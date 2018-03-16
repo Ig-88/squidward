@@ -1,4 +1,4 @@
-## Squidward Container
+## Squidward Squid Container
 Container to run squid proxy cache for rpm, deb, and other packages.
 
 To deploy
