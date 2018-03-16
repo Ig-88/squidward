@@ -49,3 +49,7 @@ The maximum size object that can be saved is 8GB.
 `maximum_object_size 8192 MB`  
 
 The minimum size object that can be saved is 0MB. 
+
+The following objects are cached for 69 days:  
+deb, rpm, pkg, tgz, tar, and iso files.
+
