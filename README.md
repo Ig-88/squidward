@@ -44,7 +44,12 @@ The create a file called `95proxies` in `/etc/apt/apt.conf.d/` with the followin
 Acquire::http::proxy "http://myproxy.server.com:8080/";  
 Acquire::ftp::proxy "ftp://myproxy.server.com:8080/";  
 Acquire::https::proxy "https://myproxy.server.com:8080/";  
-```
+```  
+
+To make this permanent on **RHEL/CENT** distros, add this to the `/etc/yum.conf` file:  
+`proxy=http://mycache.mydomain.com:3128`  
+
+
 Obviously replace the server address with yours.  
 
 ---  
