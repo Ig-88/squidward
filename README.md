@@ -19,7 +19,7 @@ Point any and all clients you want to use the cache proxy to the server's IP add
 An example:  
 `http://192.168.1.1:3128`  
 
-On an a linux machine you can temporarily add it by exporting the command to your environment:  
+On an a linux client machine you can temporarily add it by exporting the command to your environment:  
 
 `export {http,https,ftp}_proxy="http://PROXY_SERVER:PORT"` 
 To remove them:
@@ -39,7 +39,13 @@ Acquire::http::proxy "http://10.1.1.1:3128";
 Acquire::ftp::proxy "http://10.1.1.1:3128";
 Acquire::https::proxy "http://10.1.1.1:3128";
 ```  
-
+The create a file called `95proxies` in `/etc/apt/apt.conf.d/` with the following content in it:  
+```
+Acquire::http::proxy "http://myproxy.server.com:8080/";  
+Acquire::ftp::proxy "ftp://myproxy.server.com:8080/";  
+Acquire::https::proxy "https://myproxy.server.com:8080/";  
+```
+Obviously replace the server address with yours.  
 
 ---  
 Some details about the squid.conf:  
